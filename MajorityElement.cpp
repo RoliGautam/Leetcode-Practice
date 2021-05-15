@@ -8,14 +8,14 @@ public:
         int count = 1;
         //now traverse the array to check....
         for(int i = 0; i<nums.size(); i++){
-            //while traversing array if element is equal to majority element then we will increse our count......
+            //while traversing array if element is equal to majority element then we will increase our count......
             if(nums[i]==maj_ele){
                 count++;
             }
-            //if not equal then we just decrese our count ...
+            //if not equal then we just decrease our count ...
             else{
                 count--;
-                 //while decresing , if our count will became zero then , we change our majority element with current element of array.... and count will be 1
+                 //while decreasing , if our count will became zero then , we change our majority element with current element of array and count will be 1
                 if(count == 0){
                 maj_ele = nums[i];
                     count = 1;
